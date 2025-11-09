@@ -58,7 +58,12 @@ export function Navbar() {
               </>
             ) : (
               <div className="flex items-center gap-4">
-                <span className="text-sm text-muted-foreground">{currentUser.name}</span>
+                <span
+                  className="text-sm text-muted-foreground cursor-pointer hover:text-primary"
+                  onClick={() => router.push(getDashboardLink())}
+                >
+                  {currentUser.name}
+                </span>
                 <Button size="sm" variant="outline" onClick={handleLogout} className="gap-2 bg-transparent">
                   <LogOut className="h-4 w-4" /> Logout
                 </Button>

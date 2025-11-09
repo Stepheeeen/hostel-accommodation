@@ -21,12 +21,12 @@ export default function DemoPage() {
       password: "password",
       features: ["Add/manage hostels", "Manage rooms", "View bookings", "Track revenue"],
     },
-    {
-      role: "Admin",
-      email: "zainab@admin.com",
-      password: "password",
-      features: ["Approve hostels", "View analytics", "Manage users", "Platform oversight"],
-    },
+    // {
+    //   role: "Admin",
+    //   email: "zainab@admin.com",
+    //   password: "password",
+    //   features: ["Approve hostels", "View analytics", "Manage users", "Platform oversight"],
+    // },
   ]
 
   const features = [
@@ -71,7 +71,7 @@ export default function DemoPage() {
         {/* Test Accounts */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-foreground mb-6">Test Accounts</h2>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-6 md:grid-cols-2">
             {testAccounts.map((account) => (
               <Card key={account.email}>
                 <CardHeader>
@@ -225,13 +225,13 @@ export default function DemoPage() {
                   </p>
                 </div>
 
-                <div className="border-l-4 border-green-600 pl-4">
+                {/* <div className="border-l-4 border-green-600 pl-4">
                   <h3 className="font-semibold text-foreground mb-1">As an Admin</h3>
                   <p className="text-sm text-muted-foreground">
                     1. Review pending hostels • 2. Approve/reject hostels • 3. View analytics • 4. Monitor revenue • 5.
                     Manage users
                   </p>
-                </div>
+                </div> */}
               </div>
             </CardContent>
           </Card>
